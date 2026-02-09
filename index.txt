@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jennie Mack | Rom-Com Author</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="hero">
+  <img src="assets/hero.png" alt="Jennie Mack illustration" class="hero-img">
+  <div class="hero-text">
+    <h1>Sweet rom-coms with heart, humor, and happily ever afters</h1>
+    <p>
+      Hi, I’m Jennie Mack. I write feel-good love stories filled with
+      cozy moments, witty banter, and characters who always find their way to love.
+    </p>
+    <a href="#newsletter" class="btn">Get Love Letters 💌</a>
+  </div>
+</header>
+
+<section id="newsletter" class="newsletter">
+  <h2>Love Letters, Straight to Your Inbox</h2>
+  <p>
+    Be the first to hear about new releases, bonus scenes,
+    and all things rom-com magic 💕
+  </p>
+
+  <!-- Netlify Form -->
+  <form name="newsletter" method="POST" data-netlify="true">
+    <input type="email" name="email" placeholder="Your email address" required>
+    <button type="submit">Send Me Love 💗</button>
+  </form>
+</section>
+
+<section class="about">
+  <h2>Meet Jennie</h2>
+  <p>
+    Jennie Mack writes sweet, flirty romantic comedies with cozy vibes,
+    heartfelt humor, and endings that leave you smiling long after the last page.
+    When she’s not writing, she’s probably rereading her favorite love stories
+    or dreaming up the next meet-cute.
+  </p>
+</section>
+
+<section class="blog-preview">
+  <h2>From the Romance Diary</h2>
+  <div class="blog-card">
+    <h3>Why I Write Rom-Coms</h3>
+    <p>A love letter to laughter, longing, and happily ever afters.</p>
+    <a href="blog.html">Read the entry →</a>
+  </div>
+</section>
+
+<section class="contact">
+  <h2>Let’s Talk</h2>
+
+  <!-- Netlify Form -->
+  <form name="contact" method="POST" data-netlify="true">
+    <input type="text" name="name" placeholder="Your name" required>
+    <input type="email" name="email" placeholder="Your email" required>
+    <textarea name="message" placeholder="Your message" required></textarea>
+    <button type="submit">Send Message 💕</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Jennie Mack • Rom-Com Author</p>
+</footer>
+
+<!-- Floating Hearts -->
+<div class="hearts">
+  <span>💗</span>
+  <span>💖</span>
+  <span>💕</span>
+  <span>💞</span>
+  <span>💗</span>
+</div>
+
+</body>
+</html>
+
