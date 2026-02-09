@@ -29,7 +29,11 @@ h1, h2, h3 {
 }
 
 .hero-img {
-  width: 260px;
+  width: 100%;
+  max-width: 260px; /* keeps it from getting huge on desktop */
+  height: auto;     /* preserves aspect ratio */
+  border-radius: 20px; /* optional: soft, flirty edges */
+
 }
 
 .hero-text {
