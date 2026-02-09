@@ -1,0 +1,100 @@
+ body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #ffe6f0, #fff0e6, #ffe6e6);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #ff6699;
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  border-radius: 20px;
+  margin: 20px auto;
+  display: block;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ff99cc;
+  margin-right: 10px;
+}
+
+.newsletter button {
+  padding: 10px 15px;
+  background-color: #ff6699;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.blog ul {
+  list-style: none;
+  padding: 0;
+}
+
+.blog li {
+  margin: 10px 0;
+}
+
+.blog a {
+  color: #ff6699;
+  text-decoration: none;
+}
+
+footer {
+  margin: 30px 0;
+  font-size: 0.9rem;
+}
+
+.hearts-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.heart {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ff99cc;
+  transform: rotate(45deg);
+  animation: float 4s linear forwards;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ff99cc;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -10px;
+  left: 0;
+}
+
+.heart::after {
+  top: 0;
+  left: -10px;
+}
+
+@keyframes float {
+  0% { transform: translateY(0) rotate(45deg); opacity: 1; }
+  100% { transform: translateY(-100vh) rotate(45deg); opacity: 0; }
+}

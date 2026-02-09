@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jennie Mack - Rom-Com Author</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>💕 Jennie Mack 💕</h1>
+    <p>Your go-to rom-com adventures!</p>
+  </header>
+
+  <section class="hero">
+    <img src="assets/hero.png" alt="Jennie Mack illustration" class="hero-img">
+  </section>
+
+  <section class="newsletter">
+    <h2>Join my rom-com mailing list!</h2>
+    <form action="#">
+      <input type="email" placeholder="Your email" required>
+      <button type="submit">Sign Up</button>
+    </form>
+  </section>
+
+  <section class="blog">
+    <h2>Rom-Com Diary</h2>
+    <ul>
+      <li><a href="blog.html">Latest Adventures</a></li>
+      <li><a href="post.html">Behind the Scenes</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Contact Jennie: <a href="mailto:jennie@example.com">jennie@example.com</a></p>
+  </footer>
+
+  <!-- Floating hearts animation -->
+  <div class="hearts-container"></div>
+
+  <script>
+    const heartsContainer = document.querySelector('.hearts-container');
+    setInterval(() => {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.style.left = Math.random() * 100 + 'vw';
+      heartsContainer.appendChild(heart);
+      setTimeout(() => heart.remove(), 4000);
+    }, 500);
+  </script>
+</body>
+</html>
